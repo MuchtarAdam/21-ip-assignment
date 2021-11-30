@@ -5,9 +5,10 @@ package ip.syssrc.string;
  *
  * Assignment 5.3
  *
- * @author H071171512 - Fitrah Muhammad <fitrahm17h@student.unhas.ac.id>
+ * @author H071211040 - Muchtar Adam <muchtaradam2002@gmail.com>
  */
-public class FizzBuzz {
+
+ public class FizzBuzz {
 
     /**
      * Format a word into Fizz for each F or f and Buzz for each B or b
@@ -17,6 +18,25 @@ public class FizzBuzz {
      *         it doesn't contain 'Ff' or 'Bb'
      */
     public static String format(String word) {
-        return new String();
+
+        String charf = word.replace("F","").replace("f","");
+        int countf = word.length() - charf.length();
+
+        String charb = word.replace("B","").replace("b","");
+        int countb = word.length() - charb.length();
+
+        String fizzBuzz - new String();
+
+        if(countf == 0 && countb == 0){
+            fizzBuzz = word;
+        }
+        for(int i = 1; i <= countf; i++) {
+            fizzBuzz = fizzBuuzz.concat("Fizz");
+        }
+        for(int i = 1; i <= countb; i++) {
+            fizzBuzz = fizzBuuzz.concat("Buzz");
+        }
+
+        return new String(fizzBuzz);
     }
 }
